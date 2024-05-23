@@ -1,0 +1,20 @@
+<section id="feedback">
+    <h2>Feedback</h2>
+    <form id="feedbackForm">
+        <label for="logoType">Which logo type do you prefer?</label>
+        <select id="logoType" name="logoType">
+            <option value="ai">AI-Generated</option>
+            <option value="manual">Manually Created</option>
+        </select>
+        <label for="reason">Why do you prefer this type?</label>
+        <textarea id="reason" name="reason" required></textarea>
+        <button type="submit">Submit Feedback</button>
+    </form>
+</section>
+<script>
+document.getElementById('feedbackForm').addEventListener('submit', function(event) {
+    event.preventDefault();
+    // Handle form submission, e.g., send data to your server
+    alert('Feedback submitted. Thank you!');
+});
+</script>
